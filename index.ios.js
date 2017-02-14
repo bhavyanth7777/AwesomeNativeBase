@@ -12,23 +12,25 @@ import {
   View
 } from 'react-native';
 
+import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
 export default class AwesomeNativeBase extends Component {
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
-  }
+        return (
+            <Container>
+                <Header>
+                    <Left>
+                        <Button transparent>
+                            <Icon name='menu' />
+                        </Button>
+                    </Left>
+                    <Body>
+                        <Title>Header</Title>
+                    </Body>
+                    <Right />
+                </Header>
+            </Container>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
